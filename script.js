@@ -3,7 +3,6 @@ import { getDatabase, ref, onValue, push, set, update } from "https://www.gstati
 
 
 
-alert("script.js loaded");
 let historyCache = [];
 
 let currentData = {
@@ -304,5 +303,6 @@ historyCache.forEach(e => {
 
   window.URL.revokeObjectURL(url);
 };
+
 
 
