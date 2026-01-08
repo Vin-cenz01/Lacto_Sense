@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Lactosense</title>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline"></h1>
+<div class="bg-gray-900">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <div class="flex items-center gap-3">
+  <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+       alt=""
+       class="h-8 w-auto" />
+
+  <span class="text-sm font-semibold text-white">LactoSense</span>
+</div>
+
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-sm/6 font-semibold text-white">Product</a>
+        <a href="#" class="text-sm/6 font-semibold text-white">Features</a>
+        <a href="#" class="text-sm/6 font-semibold text-white">About Us</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
+    </div>
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+        
+      </div>
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Lacto-Sense</h1>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get started</a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">Everything you need to about Lactosense</p>
+      
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Real-time Milk Quality Monitoring
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Continuously measures milk parameters using biosensors and electrochemical sensing techniques.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Upgradable Sensor Interface
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Supports external, plug-in sensor modules (e.g., urea detection, fat sensors, spoilage markers).
+Makes the device future-proof and adaptable to new milk quality parameters.</dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-white">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-indigo-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Portable & User-Friendly
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-400">Compact, battery-powered, and easy to operate by farmers, vendors, consumers, and dairy workers and consumers.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+<body class="bg-[#0b1220] text-slate-200 antialiased">
+  <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT: Title + features -->
+      <div>
+        <p class="text-sm text-indigo-300 font-medium">Real-time • Portable </p>
+        <h2 class="mt-4 text-white text-4xl lg:text-5xl font-extrabold leading-tight">Smart, real-time milk quality monitoring</h2>
+        <p class="mt-4 text-slate-300 max-w-xl">LactoSense combines biosensors and electrochemical techniques to deliver instant milk freshness and safety readings — suitable for farmers, vendors, and consumers. Wireless, portable and upgradable.</p>
+
+        <div class="mt-10 space-y-6">
+
+          <!-- Feature 1 -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg glass flex items-center justify-center text-indigo-300">
+              <!-- icon: beaker -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 3v6a6 6 0 0012 0V3" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3h6" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Real-time biosensing</h3>
+              <p class="text-slate-300 text-sm">Measures pH, lactose, protein, and conductivity using electrochemical sensors for instant quality checks.</p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg glass flex items-center justify-center text-emerald-300">
+              <!-- icon: wifi -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12.55a11 11 0 0114 0M8.5 16.05a6 6 0 016.99 0M12 19.5l.01.01" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Wireless connectivity</h3>
+              <p class="text-slate-300 text-sm">ESP32-based Wi‑Fi sends live readings to a mobile app or web dashboard for remote monitoring.</p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex gap-4">
+            <div class="w-12 h-12 rounded-lg glass flex items-center justify-center text-yellow-300">
+              
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 13V7a2 2 0 00-2-2h-6M4 11v6a2 2 0 002 2h6" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h.01M17 17h.01" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Mockup / illustration -->
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/3 glass">
+          <!-- Replace the placeholder with your own screenshot or dashboard image -->
+          <img src="dashboard.png" alt="dashboard" class="w-full object-cover h-[420px]"/>
+        </div>
+        <!-- small card on top-right for visual depth -->
+        <div class="absolute -right-6 bottom-10 w-48 bg-gradient-to-br from-indigo-700/40 to-slate-800/30 p-4 rounded-2xl shadow-lg border border-white/6">
+          <div class="text-xs text-indigo-200 uppercase">Live</div>
+          <div class="mt-2 text-white font-bold text-xl">3.9 g/L</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+
+<div class="bg-gray-900 py-24 sm:py-32">
+  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+
+    <h2 class="text-center text-base/7 font-semibold text-indigo-400">
+      LactoSense System
+    </h2>
+
+    <p class="mx-auto mt-2 max-w-2xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+        Milk Quality Analyzer Dashboard
+    </p>
+
+    <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+
+      <!-- LIVE SENSOR CARD -->
+      <div class="relative">
+
+        <div class="absolute inset-px rounded-lg bg-gray-800 lg:rounded-none-4xl"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-4 text-center">Live Sensor Data</h3>
+
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div class="bg-gray-900 rounded-lg p-4">
+              <p class="text-gray-400">pH</p>
+              <p id="ph" class="text-3xl font-bold text-green-400">--</p>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg p-4">
+              <p class="text-gray-400">Glucose</p>
+              <p id="glucose" class="text-3xl font-bold text-blue-400">--</p>
+            </div>
+
+            <div class="bg-gray-900 rounded-lg p-4">
+              <p class="text-gray-400">Lactose</p>
+              <p id="lactose" class="text-3xl font-bold text-pink-400">--</p>
+              <p id="lactose_percent" class="text-sm text-gray-400">-- %</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROL PANEL -->
+      <div class="relative">
+        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+        <div class="relative flex h-full flex-col overflow-hidden rounded-xl p-8">
+          <h3 class="text-xl font-semibold text-white mb-4 text-center">Control Panel</h3>
+
+          <div class="flex flex-col gap-4">
+            <button id="newBtn" class="bg-indigo-500 hover:bg-indigo-600 text-black font-bold py-3 rounded-lg">
+              New Sample
+            </button>
+
+            <button id="recordBtn" class="bg-green-500 hover:bg-green-600 text-black font-bold py-3 rounded-lg">
+              Record Sample
+            </button>
+
+            <button id="exportBtn" class="bg-purple-500 hover:bg-purple-600 text-black font-bold py-3 rounded-lg">
+              Export CSV
+            </button>
+            <button id="clearBtn" class="bg-red-500 hover:bg-red-600 text-black font-bold py-3 rounded-lg">
+              Clear History
+            </button>
+
+
+            <div id="message" class="text-center text-yellow-400 font-semibold mt-2">
+              Ready.
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!-- INPUT + SYSTEM STATUS -->
+<div class="relative">
+  <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+  <div class="relative flex h-full flex-col overflow-hidden rounded-xl p-8">
+
+    <h3 class="text-xl font-semibold text-white mb-4 text-center">
+      Input & System Status
+    </h3>
+
+    <!-- Glucometer Input -->
+    <div class="mb-6">
+      <label class="block text-gray-400 mb-2">Glucometer Reading (mg/dL)</label>
+      <input 
+        id="glucometerInput"
+        type="number"
+        placeholder="Enter glucose reading"
+        class="w-full rounded-lg bg-gray-900 border border-gray-700 px-4 py-3 text-white mb-3"
+      />
+
+      <button 
+        id="applyGlucoBtn"
+        class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-3 rounded-lg"
+      >
+        Apply Reading
+      </button>
+
+      <p class="text-xs text-gray-400 mt-2 text-center">
+        Lactose will be calculated automatically
+      </p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- HISTORY -->
+       <div class="relative lg:col-span-3">
+  <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+  <div class="relative flex h-full flex-col overflow-hidden rounded-lg p-8">
+
+    <h3 class="text-xl font-semibold text-white mb-4">Measurement History</h3>
+
+    <div class="overflow-y-auto max-h-80">
+      <table class="w-full text-sm text-left text-gray-300">
+        <thead class="text-xs uppercase text-gray-400 border-b border-gray-700 sticky top-0 bg-gray-800">
+          <tr>
+            <th class="py-2 px-3">Time</th>
+            <th class="py-2 px-3">pH</th>
+            <th class="py-2 px-3">Glucose</th>
+            <th class="py-2 px-3">Lactose</th>
+            <th class="py-2 px-3">%</th>
+          </tr>
+        </thead>
+
+        <!-- ✅ DATA WILL COME HERE -->
+        <tbody id="records" class="divide-y divide-gray-700">
+          <tr>
+            <td colspan="5" class="text-center py-4 text-gray-500">Loading data...</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="module" src="script.js"></script>
+  </body>
+</html>
